@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projector</title>
+
+    <link rel="stylesheet" href="stylesheet.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="frame">
+      <div class="projector" id="cube"">
+        <div class="ptop sDef default"></div>
+        <div class="psideL sDef"></div>
+        <div class="psideR sDef"></div>
+        <div class="psideBL sDef default"></div>
+        <div class="psideBR sDef default"></div>
+        <div class="pfrontB sDef default"></div>
+        <div class="pbackB sDef default"></div>
+        <div class="pback sDef default"></div>
+        <div class="pbackL sDef default"></div>
+        <div class="pbackR sDef default"></div>
+        <div class="pfront sDef"></div>
+        <div class="pfrontL sDef"></div>
+        <div class="pfrontR sDef"></div>
+        <div class="mfront sDef default mid"></div>
+        <div class="mtop sDef default"></div>
+        <div class="mback sDef default mid"></div>
+        <div class="mleft sDef default mid"></div>
+        <div class="mright sDef default mid"></div>
+        <div class="tmtop tm default"></div>
+        <div class="tmleft tm default"></div>
+        <div class="tmright tm default"></div>
+        <div class="tmfront tm default"></div>
+        <div class="tmfrontL tm default"></div>
+        <div class="tmfrontR tm default"></div>
+        <div class="sfront screen"></div>
+        <div class="sleft screen"></div>
+        <div class="sright screen"></div>
+        <div class="stop screen"></div>
+        <div class="sbottom screen"></div>
+        <div class="bfront bottom"></div>
+        <div class="btop bottom"></div>
+        <div class="bback bottom"></div>
+        <div class="bleft bottom"></div>
+        <div class="bright bottom"></div>
+      </div>
+    </div>
+    
+    <div class="textsInfo">
+      <h1>Projector</h1>
+      <p>Projector from cs using css.</p>
+      <a href="https://github.com/JacobSaucelo/projectorCssArt">
+        <p>Code: JacobSaucelo/projectorCssArt</p>
+      </a>
+      <a href="https://github.com/JacobSaucelo">
+        <p>Github: github.com/JacobSaucelo</p>
+      </a>
+      <h1>1 - 29 - 23</h1>
+    </div>
+
+    <script>
+      document.addEventListener("mousemove", parallax);
+      const box = document.querySelector("#cube");
+      const limiter = 15;
+
+      function parallax(e) {
+        let boxC = box.getBoundingClientRect();
+        let x = -(e.clientY - boxC.y - boxC.height / 2) / limiter;
+        let y = (e.clientX - boxC.x - boxC.width / 2) / limiter;
+
+        box.style.transform = `rotateX(${x}deg) rotateY(${y}deg)`;
+      }
+    </script>
+  </body>
+</html>
