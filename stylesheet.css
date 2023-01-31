@@ -67,12 +67,12 @@ body h1 {
 
 .psideL {
   height: 60%;
-  background: url("/asset/sideT.png") center center / cover no-repeat;
+  background: url("./asset/sideT.png") center center / cover no-repeat;
   transform: scaleX(-1) rotateY(90deg) translateZ(75px) rotateX(20deg);
 }
 .psideR {
   height: 60%;
-  background: url("/asset/sideT.png") center center / cover no-repeat;
+  background: url("./asset/sideT.png") center center / cover no-repeat;
   transform: scaleX(1) rotateY(90deg) translateZ(75px) rotateX(20deg);
 }
 
@@ -192,7 +192,7 @@ body h1 {
   background-color: #6d676e;
 }
 .sfront {
-  background: url("/asset/screen.png") center center / cover no-repeat;
+  background: url("./asset/screen.png") center center / cover no-repeat;
   transform: rotateX(10deg) translateZ(130px) translateY(20px);
 }
 .sleft {
@@ -216,30 +216,30 @@ body h1 {
 }
 
 .bfront {
-  background: url("/asset/lower.png") center center / cover no-repeat;
+  background: url("./asset/lower.png") center center / cover no-repeat;
   transform: translateZ(200px) translateY(100px);
   width: 140%;
 }
 .btop {
   height: 200%;
   width: 140%;
-  background: url("/asset/lower.png") center center;
+  background: url("./asset/lower.png") center center;
   transform: rotateX(90deg) translateZ(-70px) translateY(50px);
 }
 .bback {
-  background: url("/asset/lower.png") center center / cover no-repeat;
+  background: url("./asset/lower.png") center center / cover no-repeat;
   transform: translateZ(-100px) translateY(100px);
   width: 140%;
 }
 .bleft {
   transform: scaleX(-1) rotateY(90deg) translateZ(105px) translateY(100px)
     translateX(-50px);
-  background: url("/asset/sides.png") center center / cover no-repeat;
+  background: url("./asset/sides.png") center center / cover no-repeat;
 }
 .bright {
   transform: rotateY(90deg) translateZ(105px) translateY(100px)
     translateX(-50px);
-  background: url("/asset/sides.png") center center / cover no-repeat;
+  background: url("./asset/sides.png") center center / cover no-repeat;
 }
 
 .textsInfo {
